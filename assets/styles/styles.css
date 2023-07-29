@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'COCOGOOSE', sans-serif !important;
+    font-size: 14px;
+    font-weight: bold !important;
+    background-image: url("../../assets/img/landing-page-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img img{
+    width: 22%;
+}
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url("../../assets/img/landig-page.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img img{
+        width: 55%;
+    }
+    
+}
+.filtro{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenido {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.centro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF !important;
+}
+
+h1, h6 {
+    text-shadow: rgb(194, 194, 194) 0.1em 0.1em 0.2em;
+}
