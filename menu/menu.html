@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú</title>
+    <link rel="shortcut icon" href="../assets/img/LOGOrapid-riders.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
 </head>
 
 <body>
@@ -18,11 +20,9 @@
     </label>
 
     <nav class="nav">
-        <ul>
-            <li><a href="#Categorias" onclick="cargar('../categorias/categorias.html')">Categorías</a></li>
-            <li><a href="#Login" onclick="cargar('../login/login.html')">Login</a></li>
-            <li><a href="#LandinPage" onclick="cargar('../registro/registro-clientes.html')">Landing Page</a></li>
-            <li><a href="#Registro" onclick="cargar('../landing-page.html')">Registro</a></li>
+        <ul class="padre">
+            <li><a href="#Categorias" onclick="cargar('../categorias/categorias.html')" class="hijo" id="asd">Categorías</a></li>
+            <li><a href="#Historial" onclick="cargar('../compras/historial.html')" class="hijo" id="ass">Historial de Compras</a></li>
         </ul>
     </nav>
 
@@ -30,5 +30,6 @@
         <iframe src="../categorias/categorias.html" frameborder="0" id="informacion"></iframe>
     </main>
 </body>
+<script src="../assets/js/jquery.min.js"></script>
 <script src="./assets/js/controlador.js"></script>
 </html>

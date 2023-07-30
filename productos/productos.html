@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="../../assets/img/LOGOrapid-riders.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+</head>
+
+<body>
+    <div class="color"
+        style="background-image: url('https://i.pinimg.com/564x/e4/5e/b6/e45eb60a0818f95306ee091e68607b6d.jpg');">
+        <div class="cabecera">
+            <img src="../assets/img/bk.png" alt="rapid-riders.png" width="100px">
+            <font size="5">Burguer King</font>
+            <div class="shop">
+                <a id="btnCarrito"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <div class="row">
+            <div class="col-md-12 rounded-4" id="productosCarga">
+                <div class="row" id="restaurantes">
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-1"
+                        onclick="addProducto(1, 150, 'Whopper')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/ab/63/f9/ab63f98e18cd2891ddaf3523e44840cc.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Whopper <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-2"
+                        onclick="addProducto(2, 190, 'Bacon King')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/a4/c1/bc/a4c1bca43fd45dec360f7879f6988125.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Bacon King Jr <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i><br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-3"
+                        onclick="addProducto(3, 124, 'Whopper Jr')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/ab/63/f9/ab63f98e18cd2891ddaf3523e44840cc.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Whopper <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-4"
+                        onclick="addProducto(4, 190,'Bacon King Jr')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/a4/c1/bc/a4c1bca43fd45dec360f7879f6988125.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Bacon King Jr <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i><br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-5"
+                        onclick="addProducto(5, 200, 'Whopper')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/ab/63/f9/ab63f98e18cd2891ddaf3523e44840cc.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Whopper <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i> <br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-6"
+                        onclick="addProducto(6, 185, 'Bacon King Jr')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/a4/c1/bc/a4c1bca43fd45dec360f7879f6988125.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Bacon King Jr <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i><br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-7"
+                        onclick="addProducto(7, 45, 'Nuggets')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/ea/eb/87/eaeb871ea4eb9f0ff264cf6985648dba.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Nuggets <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i><br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 m-2 text-center restaurantes" id="restaurante-8"
+                        onclick="addProducto(8, 75, 'Papas Fritas')">
+                        <div class="row">
+                            <div class="col-md-12 img-restaurante mb-2"
+                                style="background-image: url('https://i.pinimg.com/564x/c7/2b/3c/c72b3cc05955d8c79043f414ddcdafc0.jpg'); height: 100px;">
+                            </div>
+                            <div class="col-md-12 info-restaurante">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        Papas Fritas <br>
+                                        Descripción
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i><br>
+                                        Clasificación
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de carrito -->
+    <div class="modal fade rounded-bottom" id="mdlCarrito" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border border-secondary" style="max-height: 650px;">
+                <div class="modal-header bg-warning text-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <a type="button" class="btn" data-dismiss="modal" id="btnCerrarCarrito"><i
+                                        class="fa-solid fa-xmark"></i></a>
+                            </div>
+                            <div class="col-8">
+                                <h3>Tus Órdenes</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body border border-secondary rounded-4 m-3">
+                    <div class="container" style="max-height: 380px; overflow: hidden; overflow-y: scroll;">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Whooper</h3>
+                                        <div class="row">
+                                            <div class="col-8">Descripción Producto</div>
+                                            <div class="col-4 text-end">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">$$</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Bacon King</h3>
+                                        <div class="row">
+                                            <div class="col-8">Descripción Producto</div>
+                                            <div class="col-4 text-end">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">$$</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Papas Fritas</h3>
+                                        <div class="row">
+                                            <div class="col-8">Descripción Producto</div>
+                                            <div class="col-4 text-end">3</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">$$</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Whooper</h3>
+                                        <div class="row">
+                                            <div class="col-8">Descripción Producto</div>
+                                            <div class="col-4 text-end">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">$$</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Bacon King</h3>
+                                        <div class="row">
+                                            <div class="col-8">Descripción Producto</div>
+                                            <div class="col-4 text-end">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">$$</div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Papas Fritas</h3>
+                                        <div class="row">
+                                            <div class="col-8">Descripción Producto</div>
+                                            <div class="col-4 text-end">3</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">$$</div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid m-1 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-warning" id="btnProcesar">Procesar Orden</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Pagos -->
+    <div class="modal fade rounded-bottom" id="mdlAdd" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <a type="button" class="btn" data-dismiss="modal" id="btnCerrarAdd"><i
+                                        class="fa-solid fa-xmark"></i></a>
+                            </div>
+                            <div class="col-8">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 mb-2" id="descProduct">
+                                Descripción del Producto
+                            </div>
+                            <div class="col-12 mb-2" id="cantProduc">
+                                <div class="row">
+                                    <div class="col-4 mb-2 font-weight-bold">
+                                        <label for="txtCantidad">Cantidad</label>
+                                    </div>
+                                    <div class="col-8 mb-2 text-end">
+                                        <input type="number" class="form-control tex-end" name="txtCantidad"
+                                            id="txtCantidad" value="1" onClick="this.select();">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-2">Total</div>
+                            <div class="col-8 mb-2 text-end" id="divTotal"><span id="total"></span> $</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-warning">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de compras -->
+    <div class="modal fade rounded-bottom" id="mdlPago" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <a type="button" class="btn" data-dismiss="modal" id="btnCerrarPago"><i
+                                        class="fa-solid fa-xmark"></i></a>
+                            </div>
+                            <div class="col-8">
+                                <h3 id="nomProduct"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container border border-secondary rounded-4">
+                        <div class="row">
+                            <div class="col-12 my-3 text-center" id="divIconos">
+                                <img src="../assets/img/trj.jpg" alt="" width="180px">
+                            </div>
+                            <div class="col-12 mb-2" id="divTarjeta">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control" name="txtTitular" id="txtTitular"
+                                            placeholder="Nombre Titular" onClick="this.select();">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="number" class="form-control" name="txtNumTar" id="txtNumTar"
+                                            id="txtNumTar" onClick="this.select();" placeholder="Ingrese Numero Tarjeta" maxlength="12" size="12" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2" id="divTrjCVV">
+                                <div class="row">
+                                    <div class="col-6 mb-2 text-center">
+                                        <label for="txtFechaCad">Fecha Caducidad</label>
+                                        <input type="text" class="form-control tex-end col-6" name="txtFechaCad"
+                                            id="txtFechaCad" placeholder="MM/AA" onClick="this.select();">
+                                    </div>
+                                    <div class="col-6 mb-2 text-center">
+                                        <label for="txtCVV">CVV</label>
+                                        <input type="password" class="form-control tex-end col-6" name="txtCVV"
+                                            id="txtCVV" onClick="this.select();">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid text-center my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-warning">Finalizar Compra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/js/controlador.js"></script>
+
+</html>
