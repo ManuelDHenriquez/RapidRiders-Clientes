@@ -53,3 +53,9 @@ CerrarPago.addEventListener('click', function() {
     carrito.show();
     modalPago.hide();
 });
+
+$("#btnPagar").click(function () {
+    $("#mdlUbicacion").modal("show");
+    $("#mdlPago").modal("hide");
+    //placeInput.style.display = "block";
+});
