@@ -35,6 +35,12 @@ body {
   margin-bottom: 15px;
 }
 
+#productosCargados {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
 .shop {
   position: fixed;
   float: right;
@@ -58,7 +64,7 @@ body {
   height: 85px;
   background-color: #FFF;
   border-radius: 10px;
-  font-size: 10px;
+  font-size: 12px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -111,4 +117,9 @@ input:focus {
 
 button {
   font-weight: bold !important;
+}
+
+.swal-wide{
+  width:350px !important;
+  height: 350px !important;
 }
