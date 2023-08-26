@@ -72,3 +72,5 @@ const cargarProductos = (id, idEmpresa) => {
     localStorage.setItem("idEmpresa",idEmpresa);
     window.location.href = `../productos/productos.html`;
 }
+
+

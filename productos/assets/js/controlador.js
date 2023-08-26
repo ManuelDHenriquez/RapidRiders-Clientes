@@ -1,14 +1,14 @@
-//Modales
-let carrito = new bootstrap.Modal(document.getElementById("mdlCarrito"), {});
-let modalAdd = new bootstrap.Modal(document.getElementById("mdlAdd"), {});
-let modalPago = new bootstrap.Modal(document.getElementById("mdlPago"), {});
+// //Modales
+// let carrito = new bootstrap.Modal(document.getElementById("mdlCarrito"), {});
+// let modalAdd = new bootstrap.Modal(document.getElementById("mdlAdd"), {});
+// let modalPago = new bootstrap.Modal(document.getElementById("mdlPago"), {});
 
-//Botones
-let cerrarCarrito = document.getElementById("btnCerrarCarrito");
-let nombreProduct = document.getElementById("nomProduct");
-let cerrarAdd = document.getElementById("btnCerrarAdd");
-let procesar = document.getElementById("btnProcesar");
-let CerrarPago = document.getElementById("btnCerrarPago");
+// //Botones
+// let cerrarCarrito = document.getElementById("btnCerrarCarrito");
+// let nombreProduct = document.getElementById("nomProduct");
+// let cerrarAdd = document.getElementById("btnCerrarAdd");
+// let procesar = document.getElementById("btnProcesar");
+// let CerrarPago = document.getElementById("btnCerrarPago");
 
 //Funcionalidades de texto y varios
 let cantidadAdd = document.getElementById('txtCantidad');
@@ -58,20 +58,22 @@ console.log(`Id de empresa: ${idEmpresa}`);
 
 
 $("#btnCerrarCarrito").click(function () {
+    $("#mdlCarrito").modal("hide");
     carrito.hide();
 });
 
 $("#btnCerrarAdd").click(function () {
-    modalAdd.hide();
+    $("#mdlAdd").modal("hide");
 });
 
 const addProducto = (idProd, precioProd, nombreProd, descProd) => {
     cantidadAdd.value = 1;
-    nombreProduct.innerHTML = nombreProd;
+    $("#nomProduct").html(nombreProd);
+    //nombreProduct.innerHTML = nombreProd;
     totalAdd.innerHTML = precioProd;
     precioProducto = precioProd;
     $("#descProduct").text(descProd);
-    modalAdd.show();
+    $("#mdlAdd").modal("show");
     
     console.log(idProd);
     console.log(precioProd);
@@ -93,9 +95,9 @@ $("#btnProcesar").click(function () {
     $("#mdlPago").modal("show");
 });
 
-CerrarPago.addEventListener('click', function() {
-    carrito.show();
-    modalPago.hide();
+$("#btnCerrarPago").click(function () {
+    $("#mdlCarrito").modal("show");
+    $("#mdlPago").modal("hide");
 });
 
 $("#btnCerrarUbicación").click(function () {
@@ -165,7 +167,7 @@ btnCarrito.addEventListener('click', function() {
     console.log(productos)
     if(productos.length > 0){
         cargarCarrito();
-        carrito.show();
+        $("#mdlCarrito").modal("show");
     }else
     Swal.fire({
         icon: 'warning',

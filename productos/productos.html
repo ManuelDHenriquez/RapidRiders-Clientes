@@ -14,13 +14,15 @@
 </head>
 
 <body>
-    <div class="color"
-        style="background-image: url();" id="cabecera">
+    <div class="color" style="background-image: url();" id="cabecera">
         <div class="cabecera">
             <img src="" alt="rapid-riders.png" id="logoEmpresa" width="100px" style="border-radius: 50%;">
             <h2 id="nombreEmpresa"></h2>
             <div class="shop">
                 <a id="btnCarrito"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            </div>
+            <div class="back">
+                <a onclick="history.back()"><i class="fas fa-arrow-left fa-2x"></i></a>
             </div>
         </div>
     </div>
@@ -174,7 +176,8 @@
                         <div class="container-fluid text-center my-2">
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-warning" id="btnPagar">Finalizar Compra</button>
+                                    <button type="button" class="btn btn-warning" id="btnPagar">Finalizar
+                                        Compra</button>
                                 </div>
                             </div>
                         </div>
@@ -208,8 +211,9 @@
                             <div class="container-fluid">
                                 <div class="row mx-1">
                                     <div class="col-md-8">
-                                        <input id="srcUbicacion" class="form-control form-control-sm mt-2 mb-2 w-80 mx-auto text-center font-weight-bold rounded border-0 shadow-sml" type="text"
-                                            placeholder="Buscar un lugar">
+                                        <input id="srcUbicacion"
+                                            class="form-control form-control-sm mt-2 mb-2 w-80 mx-auto text-center font-weight-bold rounded border-0 shadow-sml"
+                                            type="text" placeholder="Buscar un lugar">
                                     </div>
                                     <div id="map" class="col-sm-12"></div>
                                 </div>
@@ -217,16 +221,20 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="text" class="col-12 mb-2" name="lon" id="txtUbicacion" placeholder="Ubicación" required>
-                                        <input type="text" class="col-12 mb-2" name="lat" id="lat" placeholder="Latitud" required disabled>
-                                        <input type="text" class="col-12 mb-2" name="lon" id="lon" placeholder="Longitud" required disabled>
+                                        <input type="text" class="col-12 mb-2" name="lon" id="txtUbicacion"
+                                            placeholder="Ubicación" required>
+                                        <input type="text" class="col-12 mb-2" name="lat" id="lat" placeholder="Latitud"
+                                            required disabled>
+                                        <input type="text" class="col-12 mb-2" name="lon" id="lon"
+                                            placeholder="Longitud" required disabled>
                                     </div>
                                 </div>
                             </div>
                             <div class="container-fluid text-center my-2">
                                 <div class="row">
                                     <div class="col-12">
-                                        <button type="button" class="btn btn-warning" id="btnAddOrden">Finalizar Compra</button>
+                                        <button type="button" class="btn btn-warning" id="btnAddOrden">Finalizar
+                                            Compra</button>
                                     </div>
                                 </div>
                             </div>
@@ -243,5 +251,7 @@
 <script src="./assets/js/controlador.js"></script>
 <script src="./assets/js/map.js"></script>
 <!-- prettier-ignore -->
-<script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzBq9H-M7exVwXolX125HWmbgrbbQns7s&callback=initMap&libraries=places&v=weekly"></script>
+<script async defer type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzBq9H-M7exVwXolX125HWmbgrbbQns7s&callback=initMap&libraries=places&v=weekly"></script>
+
 </html>

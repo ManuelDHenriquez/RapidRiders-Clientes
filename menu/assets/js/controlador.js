@@ -6,7 +6,7 @@ const cargar = (url) => {
 $(document).ready(function () {
     $('.hijo').click( function () {
         $("#menu").prop( "checked", false );
-        console.log($(this).attr('id'))
+        //console.log($(this).attr('id'))
     })
 })
 
