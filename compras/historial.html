@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Compras</title>
+    <link rel="shortcut icon" href="../../assets/img/LOGOrapid-riders.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 header bg-warning" >
+                <div class="row my-3">
+                    <div class="col-12 text-center" id="cabeza">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Historial de Compras</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body col-12">
+                <div class="row  m-2">
+                    <div class="col-12 border border-secondary rounded-4" id="cuerpo">
+                        <div class="row m-2" id="ordenes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <!-- Modal de compras -->
+    <div class="modal fade rounded-bottom" id="mdlCompras" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border border-secondary" style="max-height: 650px;">
+                <div class="modal-header bg-warning text-center">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <a type="button" class="btn" data-dismiss="modal" id="btnCerrarCarrito"><i
+                                        class="fa-solid fa-xmark"></i></a>
+                            </div>
+                            <div class="col-8">
+                                <h3>Productos</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body border border-secondary rounded-4 m-3">
+                    <div class="container" style="max-height: 380px; overflow: hidden; overflow-y: scroll;">
+                        <div class="row" id="productosCarrito">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-end">Total: Lps. <span id="totalPedido"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="./assets/js/controlador.js"></script>
+</html>
